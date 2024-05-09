@@ -2,7 +2,7 @@ import streamlit as st
 import time
 import io
 
-st.title("SUDOKU SOLVER BY MARUTHI D.M UNDER THE SUPERVISION OF Dr K.N DAS")
+st.title("SUDOKU SOLVER BY MARUTHI D.M UNDER SUPERVISION OF Dr K.N DAS")
 
 # Function to read Sudoku from an uploaded file
 def read_sudoku_from_uploaded_file(uploaded_file):
