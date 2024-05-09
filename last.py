@@ -2,7 +2,7 @@ import streamlit as st
 import time
 import io
 
-st.title("SUDOKU SOLVER")
+st.title("SUDOKU SOLVER BY MARUTHI D.M UNDER SUPERVISON OF Dr K.N DAS")
 
 # Function to read Sudoku from an uploaded file
 def read_sudoku_from_uploaded_file(uploaded_file):
@@ -74,7 +74,7 @@ if filename:
     
     # Determine grid size based on the first row
     first_row_elements_count = len(sudoku_puzzle[0])
-    st.write(f"Number of elements in the first row: {first_row_elements_count}")
+   #st.write(f"Number of elements in the first row: {first_row_elements_count}")
 
     if first_row_elements_count == 10:
         r = 2
