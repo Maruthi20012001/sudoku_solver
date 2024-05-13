@@ -2,13 +2,13 @@ import streamlit as st
 import time
 
 def read_sudoku_from_file(filename):
-    with open(filename, 'r') as file:
-        lines = file.readlines()
-        sudoku = []
-        for line in lines:
-            row = [int(num) for num in line.strip().split(',')]
-            sudoku.append(row)
-        return sudoku
+    content = filename.getvalue().decode("utf-8")
+    lines = content.split('\n')
+    sudoku = []
+    for line in lines:
+        row = [int(num) for num in line.strip().split(',')]
+        sudoku.append(row)
+    return sudoku
 
 def print_board(board):
     for row in board:
