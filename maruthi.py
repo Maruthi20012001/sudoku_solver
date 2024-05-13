@@ -67,7 +67,7 @@ def solve_sudoku(board):
     return False
 
 def main():
-    st.title("Sudoku Solver")
+    st.title("SUDOKU SOLVER BY MARUTHI D.M UNDER THE SUPERVISON OF Dr K.N DAS")
 
     # Input for r, c, and n
     r = st.number_input("Enter the number of rows in each subgrid: ", value=3)
