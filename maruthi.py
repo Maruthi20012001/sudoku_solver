@@ -6,7 +6,7 @@ def read_sudoku_from_file(filename):
         lines = file.readlines()
         sudoku = []
         for line in lines:
-            row = [int(num) for num in line.strip().split()]
+            row = [int(num) for num in line.strip().split(',')]
             sudoku.append(row)
         return sudoku
 
