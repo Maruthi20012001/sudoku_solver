@@ -6,7 +6,7 @@ def read_sudoku_from_file(filename):
         lines = file.readlines()
         sudoku = []
         for line in lines:
-            row = [int(num) for num in line.strip().split(',')]
+            row = [int(num) for num in line.strip().split()]
             sudoku.append(row)
         return sudoku
 
@@ -74,7 +74,7 @@ def main():
     c = st.number_input("Enter the number of columns in each subgrid: ", value=3)
     n = r * c
 
-    filename = st.file_uploader("Upload Sudoku puzzle file (CSV format): ")
+    filename = st.file_uploader("Upload Sudoku puzzle file (Text document format - .txt): ")
 
     if filename is not None:
         st.write('\nSolving Sudoku puzzle from file:', filename.name)
